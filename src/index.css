@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+}
+
+html{
+  width:100%
+}
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: "";
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    width: 350px;
+    height: 350px;
+
+    background-image: url("./assets/Watermark.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.05;
+
+    transform: translate(-50%, -50%);
+
+    pointer-events: none;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 100%;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        max-width: 100%;
+    }
+
+    h1,
+    h2,
+    h3 {
+        overflow-wrap: break-word;
+    }
+}

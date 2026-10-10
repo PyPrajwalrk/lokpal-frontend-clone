@@ -1,0 +1,80 @@
+/* =========================
+   BREADCRUMB
+========================= */
+
+.about-breadcrumb {
+    width: 100%;
+    background-color: #06177c;
+}
+
+.breadcrumb-container {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 20px 25px;
+
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    color: white;
+    font-size: 18px;
+}
+
+
+/* =========================
+   INTRODUCTION PAGE
+========================= */
+
+.introduction-page {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+
+    padding: 35px 25px 70px;
+}
+
+.introduction-page h1 {
+    color: #123b78;
+    font-size: 38px;
+    margin: 0 0 25px;
+}
+
+.introduction-page p {
+    color: #222;
+    font-size: 18px;
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+.introduction-page .quote {
+    font-style: italic;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .breadcrumb-container {
+        padding: 14px 15px;
+        font-size: 14px;
+    }
+
+    .introduction-page {
+        padding: 25px 15px 50px;
+    }
+
+    .introduction-page h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .introduction-page p {
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+}

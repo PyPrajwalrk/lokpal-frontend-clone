@@ -1,0 +1,502 @@
+/* ========================================
+   MEMBERS SECTION
+======================================== */
+
+.members-section {
+    width: 100%;
+    max-width: none;
+    margin: 70px 0;
+    padding: 45px 5%;
+
+    /* Light Cream Background */
+    background: linear-gradient(
+        135deg,
+        #fffdf7 0%,
+        #fffaf0 50%,
+        #fdfcf8 100%
+    );
+
+    border-radius: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ========================================
+   SUBTLE BACKGROUND WAVES
+======================================== */
+
+.members-section::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    right: -100px;
+
+    width: 500px;
+    height: 350px;
+
+    background:
+        repeating-radial-gradient(
+            ellipse at right,
+            transparent 0 18px,
+            rgba(55, 160, 220, 0.08) 19px 21px,
+            transparent 22px 38px
+        );
+
+    opacity: 0.6;
+
+    pointer-events: none;
+}
+
+
+/* ========================================
+   MAIN HEADING
+======================================== */
+
+.members-section > h2 {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    font-size: 36px;
+
+    color: #123b78;
+
+    margin: 0 0 45px;
+}
+
+
+/* Small Blue Line */
+
+.members-section > h2::after {
+    content: "";
+
+    display: block;
+
+    width: 65px;
+    height: 3px;
+
+    background: #4aa9df;
+
+    margin: 10px auto 0;
+
+    border-radius: 10px;
+}
+
+
+/* ========================================
+   COMMON MEMBER CARD
+======================================== */
+
+.member-card {
+    background: #ffffff;
+
+    border: 1px solid #d5e7f5;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 16px rgba(20, 72, 120, 0.12);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+/* Hover */
+
+.member-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 25px rgba(20, 72, 120, 0.18);
+}
+
+
+/* ========================================
+   CHAIRPERSON CARD
+======================================== */
+
+.chairperson-card {
+    width: 280px;
+
+    margin: 0 auto 45px;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+.chairperson-card > img {
+    width: 145px;
+    height: 145px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    margin: 18px auto 12px;
+}
+
+
+/* ========================================
+   MEMBERS GRID
+======================================== */
+
+.members-grid {
+    width: 100%;
+
+    position: relative;
+    z-index: 1;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Member Images */
+
+.member-card > img {
+    width: 125px;
+    height: 125px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+
+    margin: 18px auto 12px;
+}
+
+
+/* ========================================
+   MEMBER INFORMATION
+======================================== */
+
+.member-info {
+    background: #14518d;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px 12px 17px;
+}
+
+
+/* Member Name / Role */
+
+.member-info h3 {
+    margin: 0 0 7px;
+
+    font-size: 19px;
+
+    font-weight: 600;
+}
+
+
+/* Designation */
+
+.member-info p {
+    margin: 0 0 15px;
+
+    font-size: 15px;
+
+    line-height: 1.3;
+}
+
+
+/* ========================================
+   MORE INFO BUTTON
+======================================== */
+
+.member-info button {
+    border: 1px solid #4aa9df;
+
+    background: white;
+
+    color: #14518d;
+
+    padding: 8px 16px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+
+.member-info button:hover {
+    background: #4aa9df;
+
+    color: white;
+
+    transform: translateY(-1px);
+}
+
+
+/* ========================================
+   MEMBER MODAL
+======================================== */
+
+.member-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(4, 25, 50, 0.70);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    z-index: 1000;
+}
+
+
+.member-modal {
+    width: 700px;
+
+    max-width: 100%;
+
+    max-height: 85vh;
+
+    overflow-y: auto;
+
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    position: relative;
+
+    box-shadow:
+        0 15px 50px rgba(0, 0, 0, 0.35);
+}
+
+
+/* Close Button */
+
+.close-btn {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    border: none;
+
+    background: transparent;
+
+    font-size: 28px;
+
+    color: #555;
+
+    cursor: pointer;
+}
+
+
+.close-btn:hover {
+    color: #123b78;
+}
+
+
+/* ========================================
+   MODAL TOP
+======================================== */
+
+.modal-top {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding-right: 30px;
+}
+
+
+.modal-image {
+    width: 125px;
+    height: 125px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    flex-shrink: 0;
+}
+
+
+/* Modal Heading */
+
+.modal-heading h2 {
+    margin: 0 0 8px;
+
+    color: #123b78;
+
+    font-size: 25px;
+}
+
+
+.modal-heading h3 {
+    margin: 0;
+
+    color: #2679ad;
+
+    font-size: 18px;
+}
+
+
+/* Modal Divider */
+
+.member-modal hr {
+    border: none;
+
+    border-top: 1px solid #dceaf5;
+
+    margin: 22px 0;
+}
+
+
+/* Modal Section Heading */
+
+.member-modal h4 {
+    color: #123b78;
+
+    margin-bottom: 10px;
+
+    font-size: 19px;
+}
+
+
+/* Modal Description */
+
+.modal-description {
+    color: #333;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+
+    text-align: justify;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .members-section {
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 45px 0;
+
+        padding: 35px 12px;
+
+        border-radius: 0;
+    }
+
+
+    /* Heading */
+
+    .members-section > h2 {
+        font-size: 28px;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* Members */
+
+    .members-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    /* Chairperson */
+
+    .chairperson-card {
+        width: 280px;
+
+        max-width: 100%;
+
+        margin-bottom: 30px;
+    }
+
+
+    /* Member Image */
+
+    .member-card > img {
+        width: 115px;
+
+        height: 115px;
+    }
+
+
+    /* Member Text */
+
+    .member-info h3 {
+        font-size: 17px;
+    }
+
+
+    .member-info p {
+        font-size: 13px;
+    }
+
+
+    /* Modal */
+
+    .member-modal {
+        padding: 25px;
+
+        max-height: 90vh;
+    }
+
+
+    .modal-top {
+        flex-direction: column;
+
+        text-align: center;
+
+        padding-right: 0;
+    }
+
+
+    .modal-heading h2 {
+        font-size: 21px;
+    }
+
+
+    .modal-description {
+        text-align: left;
+    }
+}

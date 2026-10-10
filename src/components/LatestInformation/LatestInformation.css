@@ -1,0 +1,172 @@
+.latest-information {
+    width: 100%;
+    padding: 0;
+}
+
+.latest-information h2 {
+    color: #123b78;
+
+    font-size: 28px;
+
+    margin: 0 0 18px;
+
+    position: relative;
+}
+
+.latest-information h2::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    background: #4aa9df;
+
+    margin-top: 8px;
+}
+
+.latest-tabs {
+    display: flex;
+
+    gap: 5px;
+
+    margin-bottom: 15px;
+}
+
+.latest-tabs button {
+    padding: 9px 15px;
+
+    border: 1px solid #cfe2f0;
+
+    background: #ffffff;
+
+    color: #123b78;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+}
+
+.latest-tabs button:first-child {
+    background: #14518d;
+    color: white;
+}
+
+.latest-list {
+    width: 100%;
+
+    background: #ffffff;
+
+    border: 1px solid #dceaf4;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    margin-bottom: 15px;
+}
+
+.news-item {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px;
+
+    border-bottom: 1px solid #e3edf4;
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-arrow {
+    color: #14518d;
+    font-size: 12px;
+}
+
+.news-date {
+    font-size: 13px;
+
+    color: #14518d;
+
+    white-space: nowrap;
+
+    font-weight: 600;
+}
+
+.news-title {
+    font-size: 13px;
+
+    color: #333;
+
+    flex: 1;
+}
+
+.latest-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.latest-buttons button {
+    padding: 8px 16px;
+
+    border: 1px solid #14518d;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    background: #14518d;
+
+    color: white;
+
+    margin-top: 5px;
+}
+
+.latest-buttons button:hover {
+    background: #0d3d70;
+}
+
+@media (max-width: 768px) {
+
+    .latest-information h2 {
+        font-size: 20px;
+    }
+
+    .latest-tabs {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .latest-tabs button {
+        font-size: 10px;
+        padding: 7px 9px;
+        flex-shrink: 0;
+    }
+
+    .news-item {
+        padding: 8px 6px;
+        gap: 5px;
+    }
+
+    .news-date {
+        font-size: 9px;
+    }
+
+    .news-title {
+        font-size: 9px;
+    }
+
+    .latest-buttons button {
+        font-size: 10px;
+        padding: 6px 10px;
+    }
+}

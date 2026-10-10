@@ -1,0 +1,108 @@
+/* =========================
+   MAIN CONTENT GRID
+========================= */
+
+.home-content-grid {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 40px auto 50px;
+    padding: 30px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 40px;
+    row-gap: 50px;
+
+    align-items: start;
+}
+
+
+/* Every component takes full column width */
+
+.home-content-grid > * {
+    width: 100%;
+    max-width: none;
+}
+
+.home-page {
+    width: 100%;
+    background-color: #fffaf1;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .home-content-grid {
+        width: 100%;
+
+        padding: 10px 14px;
+        margin: 30px auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+    .home-content-grid > * {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+/* =========================
+   FINAL WIDTH FIX
+========================= */
+
+.home-content-grid .how-to-file,
+.home-content-grid .latest-information,
+.home-content-grid .calendar,
+.home-content-grid .about-lokpal {
+    width: 100% !important;
+    max-width: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+/* VIDEO */
+.home-content-grid .how-to-file video {
+    width: 100% !important;
+    display: block;
+}
+
+
+/* LATEST INFORMATION */
+.home-content-grid .latest-information {
+    padding: 0 !important;
+}
+
+.home-content-grid .latest-list {
+    width: 100%;
+}
+
+.home-content-grid .news-item {
+    width: 100%;
+}
+
+
+/* CALENDAR */
+.home-content-grid .calendar {
+    width: 100% !important;
+}
+
+
+/* ABOUT */
+.home-content-grid .about-lokpal {
+    width: 100% !important;
+}
+
+/* 
+/////////////////////////////////// */
+

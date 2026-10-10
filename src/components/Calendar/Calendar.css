@@ -1,0 +1,144 @@
+.calendar {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+
+    background: #ffffff;
+
+    border: 1px solid #dceaf4;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 15px rgba(20, 72, 120, 0.08);
+}
+
+.calendar > h2 {
+    color: #123b78;
+
+    font-size: 28px;
+
+    margin: 0;
+
+    padding: 0 0 18px;
+
+    background: transparent;
+}
+
+.calendar-header {
+    display: grid;
+
+    grid-template-columns: 55px 1fr 55px;
+
+    align-items: center;
+
+    background: #14518d;
+}
+
+.calendar-header h2 {
+    margin: 0;
+
+    text-align: center;
+
+    color: white;
+
+    padding: 13px;
+
+    font-size: 20px;
+}
+
+.calendar-header button {
+    height: 100%;
+
+    border: none;
+
+    background: #14518d;
+
+    color: white;
+
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.calendar-header button:hover {
+    background: #0d3d70;
+}
+
+.calendar-days,
+.calendar-dates {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-days div,
+.calendar-dates div {
+    border: 1px solid #e2edf4;
+
+    padding: 13px;
+
+    text-align: center;
+}
+
+.calendar-days div {
+    font-weight: bold;
+
+    background: #f2f8fc;
+
+    color: #123b78;
+
+    font-size: 13px;
+}
+
+.calendar-dates div {
+    min-height: 55px;
+
+    font-size: 13px;
+}
+
+.calendar-dates .holiday {
+    background: #ef4444;
+
+    color: white;
+
+    font-weight: bold;
+}
+
+.calendar-dates .weekend {
+    color: #ef4444;
+
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+
+    .calendar > h2 {
+        font-size: 20px;
+        padding-bottom: 12px;
+    }
+
+    .calendar-header {
+        grid-template-columns: 40px 1fr 40px;
+    }
+
+    .calendar-header h2 {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .calendar-header button {
+        font-size: 20px;
+    }
+
+    .calendar-days div,
+    .calendar-dates div {
+        padding: 7px 2px;
+        font-size: 10px;
+    }
+
+    .calendar-dates div {
+        min-height: 35px;
+    }
+}

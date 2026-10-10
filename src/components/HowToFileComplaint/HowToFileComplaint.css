@@ -1,0 +1,50 @@
+.how-to-file {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.how-to-file h2 {
+    margin: 0 0 18px;
+
+    color: #123b78;
+    font-size: 28px;
+
+    position: relative;
+}
+
+.how-to-file h2::after {
+    content: "";
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    background: #4aa9df;
+
+    margin-top: 8px;
+}
+
+.how-to-file video {
+    width: 100%;
+    display: block;
+
+    border-radius: 10px;
+
+    border: 1px solid #d8e8f4;
+
+    box-shadow: 0 6px 18px rgba(20, 72, 120, 0.12);
+}
+
+@media (max-width: 768px) {
+
+    .how-to-file h2 {
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 12px;
+    }
+
+    .how-to-file video {
+        border-radius: 7px;
+    }
+}

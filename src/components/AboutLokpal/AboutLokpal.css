@@ -1,0 +1,93 @@
+.about-lokpal {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+
+    background: #fffdf7;
+
+    border: 1px solid #e8e4d8;
+
+    border-radius: 10px;
+
+    padding: 25px;
+
+    box-shadow: 0 5px 15px rgba(20, 72, 120, 0.07);
+}
+
+.about-lokpal h2 {
+    margin: 0 0 18px;
+
+    color: #123b78;
+
+    font-size: 28px;
+
+    position: relative;
+}
+
+.about-lokpal h2::after {
+    content: "";
+
+    display: block;
+
+    width: 45px;
+    height: 3px;
+
+    background: #4aa9df;
+
+    margin-top: 8px;
+}
+
+.about-content {
+    width: 100%;
+}
+
+.about-content p {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #333;
+
+    text-align: justify;
+
+    margin-bottom: 16px;
+}
+
+.about-content button {
+    padding: 9px 18px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #14518d;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.about-content button:hover {
+    background: #0d3d70;
+}
+
+@media (max-width: 768px) {
+
+    .about-lokpal {
+        padding: 15px;
+    }
+
+    .about-lokpal h2 {
+        font-size: 20px;
+    }
+
+    .about-content p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+    .about-content button {
+        padding: 7px 12px;
+        font-size: 10px;
+    }
+}
