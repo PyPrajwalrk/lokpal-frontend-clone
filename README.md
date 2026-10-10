@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lokpal of India — Frontend
 
 A React-based frontend project recreating the Lokpal of India website interface.
@@ -113,3 +114,6 @@ This is an independent development project for learning and demonstration purpos
 
 No license has been assigned yet. All rights and permissions are reserved unless otherwise specified.
 git
+=======
+# lokpal-frontend-clone
+>>>>>>> origin/main
